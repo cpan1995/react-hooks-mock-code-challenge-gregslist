@@ -27,7 +27,7 @@ function ListingsContainer({searchItem}) {
     fetch(`http://localhost:6001/listings/${getDeleteItems}`, requestOptions)
     .then(response => console.log(response))
 
-  }, [])
+  }, [getDeleteItems])
 
   const itemsComponentList = searchArray.map(eachItem => {
     return (
